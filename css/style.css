@@ -745,3 +745,46 @@ body {
      font-size: 20px;
  
   }
+
+  @media (max-width:768px){
+     body,html{
+      padding: 0%;
+      margin: 0%;
+      /* box-sizing: border-box; */
+     } 
+      
+      .container{
+        width:200%;
+      }
+      .category{
+        width: 200%;
+      }
+      .slider{
+        width: 200%;
+      }
+      .arrowbtn{
+        width: 200%;
+      }
+      .arrowbtn :nth-child(1){
+       margin-top: -120px;
+      }
+      .arrowbtn :nth-child(2){
+       margin-top: -120px;
+       margin-left:300px;
+      }
+      .best{
+        width: 200%;
+      }
+      .bestproduct{
+        width: 200%;
+      }
+      .proimg{
+        padding-left: 12px;
+      }
+      .topselling{
+        width: 200%;
+      }
+      footer{
+        width: 200%;
+      }
+    }
