@@ -529,7 +529,7 @@ body {
         animation: sliderimg 10s infinite;
       }
 
-      @keyframes sliderimg {
+      /* @keyframes sliderimg {
         25% {
           transform: translateX(0%);
         }
@@ -542,7 +542,7 @@ body {
         100% {
           transform: translateX(-300%);
         }
-      }
+      } */
      .arrowbtn{
         display: flex;
        justify-content: center;

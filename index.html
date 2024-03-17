@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="image/faviconlogo.png" type="image/x-icon">
-    <title>Flipkart Clone</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
+    <title>Flipkart Clone</title>
+    
+     </head>
 
   <body>
     <!-- For Nav Bar -->
@@ -249,12 +250,12 @@
     <!-- <div class="slider"> -->
     <div class="slider">
         <div class="arrowbtn">
-            <button  ><img style="transform: rotate(180deg);" src="image/icons8-arrow-right.png" alt=""></button>
-            <button ><img  src="image/icons8-arrow-right.png" alt=""></button>
+            <button  ><img style="transform: rotate(180deg);" id="btn_left" src="image/icons8-arrow-right.png" alt=""></button>
+            <button ><img  src="image/icons8-arrow-right.png" id="btn_right" alt=""></button>
         </div>
-      <div class="image_slider">
+      <div class="image_slider" id="slide">
         
-        <img class="imgslide" src="image/slider1.webp" alt="" />
+        <img class="imgslide"  src="image/slider1.webp" alt="" />
         <img class="imgslide" src="image/slider2.webp" alt="" />
         <img class="imgslide" src="image/slider3.webp" alt="" />
         <img class="imgslide" src="image/slider4.webp" alt="" />
@@ -500,5 +501,27 @@
     </footer>
 
     <!-- Footer End -->
+
+    <script>
+    let btn_left=document.getElementById(`btn_left`);
+    let btn_right=document.getElementById(`btn_right`);
+    let slide=document.getElementById(`slide`)
+
+// for slider right left
+    btn_right.addEventListener(`click`,nextSlide)
+    function nextSlide(){
+slide.style.scrollBehavior=`smooth`
+    slide.scrollLeft +=1570
+    }
+      
+   btn_left.addEventListener(`click`,()=>{
+     slide.style.scrollBehavior=`smooth`
+    slide.scrollLeft -=1550
+   })
+
+  
+   
+    
+    </script>
   </body>
 </html>
